@@ -1,13 +1,13 @@
 module "azurerm_resource_group" {
   source              = "../modules/resource_group"
-  resource_group_name = "myapp-rg"
-  location            = "Canada Central"
+  resource_group_name = "akshay11"
+  location            = "India Central"
 }
 
 module "vnet" {
   depends_on = [ module.azurerm_resource_group ]
 source = "../modules/virtual_network"
-virtual_network_name = "myvnet"
+virtual_network_name = "Neetaambani"
 resource_group_name = "myapp-rg"
 location = "Canada Central"
 address_space = ["10.0.0.0/16"]
